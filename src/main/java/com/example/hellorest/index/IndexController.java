@@ -16,6 +16,6 @@ public class IndexController {
 	
 	@GetMapping("/")
 	public String index() {
-		return "Hello, Boot!";
+		return "Hello, Boot! " + System.getenv("HOSTNAME");
 	}
 }
